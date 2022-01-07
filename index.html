@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Component</title>
+    <title>Equilibrium</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -25,21 +26,34 @@
 
                 <h3>Equilibrium #3429</h2>
                     <p>Our Equilibrium collection promotes balance and calm.</p>
+                    <div class="span">
 
-                    <span class="left">
-                        <p>ICON1</p>
-                        <p>0.041ETH</p>
-                    </span>
-                    <span class="right">
-                        <p>ICON2</p>
-                        <p>3 days left</p>
-                    </span>
+                        <div class="left">
+                            <span class="img">
+                                <img src="images/icon-ethereum.svg" alt="Ethereum Icon" class="icon">
+                            </span><span class="text">
+                                <p> 0.041ETH
+                                </p>
+                            </span>
+                        </div>
+                        <div class="right">
+                            <span class="img">
+                                <img src="images/icon-clock.svg" alt="Clock Icon" class="icon">
+                            </span><span class="text">
+                                <p> 3 days left
+                                </p>
+                            </span>
+                        </div>
+                    </div>
 
             </div>
-            <hr>
+            <hr class="line">
             <div class="foot">
-                <img src="link" alt="Image of the creator">
-                <p>Creation of Jules Wyvern</p>
+                <span class="img">
+                    <img src="images/image-avatar.png" alt="Image of the creator">
+                </span> <span class="text">
+                    <p>Creation of <span id="name"> Jules Wyvern</span></p>
+                </span>
             </div>
         </div>
     </main>

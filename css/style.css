@@ -37,17 +37,69 @@ main .container .head img{
     border-radius: 10px;
 }
 
-main .container .content{
+main .container .content,main .container .foot{
     margin: 0 15px;
     width: 90%;
 }
 
 main .container .content h3{
-    color: #fff;
-    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
 }
 
 main .container .content p{
     color: hsl(215, 51%, 70%);
     font-weight: 300;
+}
+main .container .content .span{
+    display: flex;
+    justify-content: space-between;
+}
+main .container .content .span div{
+    display: flex;
+    align-items: center;
+}
+main .container .content .span .left p{
+    color: hsl(178, 100%, 50%);
+}
+main .container .content .span p{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 50px;
+}
+main .container .content .span .img{
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 25px;
+}
+hr{
+    background: hsl(215, 32%, 27%);
+    height: 1.5px;
+    width: 92%;
+    border: none;
+}
+main .container .foot p{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 50px;
+    color: hsl(215, 51%, 70%);
+    font-weight: normal;
+}
+main .container .foot .img{
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 40px;
+}
+main .container .foot .img img{
+    height: 10%;
+    width: 10%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+#name{
+    color: hsl(0, 0%, 100%);
 }
