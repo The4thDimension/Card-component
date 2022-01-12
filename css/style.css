@@ -13,7 +13,7 @@ p{
 }
 main{
     position: relative;
-    height: 1000px;
+    height: 700px;
     width: 100%;
 }
 .container{
@@ -30,15 +30,46 @@ main{
 main .container .head{
     margin: auto;
     text-align: center;
+    width: 90%;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: flex;
+}
+main .container .head .eyes{
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    top: 28%;
+    left: 43%;
+    z-index: 0;
 }
 main .container .head img{
-    width: 90%;
-    margin: 10px;
+    width: 100%;
+    margin: 0;
+    height: 100%;
     border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    z-index: 0.5;
+}
+
+.head:hover{
+    background-color: hsl(178, 100%, 50%);
+    padding: 0;
+}
+.head:hover .img{
+    opacity: 0.5;
+}
+.head:hover .eyes{
+    display: block;
+    z-index: 1;
+    opacity: 1;
+
 }
 
 main .container .content,main .container .foot{
-    margin: 0 15px;
+    margin: 0 20px;
     width: 90%;
 }
 
@@ -103,3 +134,12 @@ main .container .foot .img img{
 #name{
     color: hsl(0, 0%, 100%);
 }
+@media only screen and (max-width: 650px){
+    main{
+        height: 700px;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
