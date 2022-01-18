@@ -38,11 +38,14 @@ main .container .head{
 }
 main .container .head .eyes{
     position: absolute;
-    height: 30px;
-    width: 60px;
-    top: 28%;
-    left: 43%;
+    height: 34px;
+    width: 51px;
+    top: 27%;
+    left: 44.5%;
     z-index: 0;
+    opacity: 1;
+    /* visibility: hidden; */
+    /* opacity: 0; */
 }
 main .container .head img{
     width: 100%;
@@ -51,7 +54,6 @@ main .container .head img{
     border-radius: 10px;
     cursor: pointer;
     object-fit: cover;
-    z-index: 0.5;
 }
 
 .head:hover{
@@ -59,13 +61,11 @@ main .container .head img{
     padding: 0;
 }
 .head:hover .img{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .head:hover .eyes{
-    display: block;
-    z-index: 1;
-    opacity: 1;
-
+    opacity: 0;
+    visibility: visible;
 }
 
 main .container .content,main .container .foot{
@@ -105,6 +105,12 @@ main .container .content .span .img{
     vertical-align: middle;
     font-size: 25px;
 }
+main .container .content h3{
+    cursor: pointer;
+}
+main .container .content h3:hover{
+    color: hsl(178, 100%, 50%);
+}
 hr{
     background: hsl(215, 32%, 27%);
     height: 1.5px;
@@ -133,6 +139,10 @@ main .container .foot .img img{
 }
 #name{
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+#name:hover{
+    color: hsl(178, 100%, 50%);
 }
 @media only screen and (max-width: 650px){
     main{
