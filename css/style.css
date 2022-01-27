@@ -36,6 +36,7 @@ main .container .head{
     border-radius: 10px;
     transition: 0.2s;
     display: flex;
+    transition: 1s;
 }
 main .container .head .img{
     position: relative;
