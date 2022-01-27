@@ -36,6 +36,10 @@ main .container .head{
     transition: 0.2s;
     display: flex;
 }
+main .container .head .img{
+    position: relative;
+    z-index: 1;
+}
 main .container .head .eyes{
     position: absolute;
     height: 34px;
@@ -43,9 +47,6 @@ main .container .head .eyes{
     top: 27%;
     left: 44.5%;
     z-index: 0;
-    opacity: 1;
-    /* visibility: hidden; */
-    /* opacity: 0; */
 }
 main .container .head img{
     width: 100%;
@@ -64,8 +65,7 @@ main .container .head img{
     opacity: 0.3;
 }
 .head:hover .eyes{
-    opacity: 0;
-    visibility: visible;
+    z-index: 2;
 }
 
 main .container .content,main .container .foot{
